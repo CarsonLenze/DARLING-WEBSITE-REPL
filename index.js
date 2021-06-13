@@ -1,49 +1,33 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const Canvas = require("canvas")
-const fs = require('fs')
+var fs = require('fs'),
+    http = require('http'),
+    https = require('https'),
+    express = require('express');
 
-const app = express();
+var port = 443;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+const options = {
+    key: fs.readFileSync(__dirname + '/private.key', 'utf8'),
+   cert: fs.readFileSync(__dirname + '/public.cert', 'utf8')
+ };
 
-app.use(express.static('public'));
 
-app.get('*', async (req, res) => {
-  const output = req.url
-  const test = output.substring(35);
+var app = express();
 
-   console.log(test)
-  
-  if (!test) {
-    return;
-  }
-  const url = `https://cdn.discordapp.com/avatars/${test}`
+var server = https.createServer(options, app)
 
-  console.log(url)
+app.use(express.static(__dirname + '/public'));
 
-const canvas = Canvas.createCanvas(200, 200);
-  const context = canvas.getContext('2d');
-
-  context.beginPath();
-  context.arc(100, 100, 100, 0, Math.PI * 2, true);
-  context.closePath();
-  context.clip();
-
- Canvas.loadImage(url).then((avatar) => {
-  context.drawImage(avatar, 0, 0, 200, 200);
-
-  const out = fs.createWriteStream(__dirname + '/image.png')
-const stream = canvas.createPNGStream()
-stream.pipe(out)
-out.on('finish', () => {
-
-})
-  })
-setTimeout(() => {
-   res.sendFile(__dirname + '/image.png');
-}, 200);
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(8089, () => console.log('server started'));
+//The 404 Route (ALWAYS Keep this as the last route)
+
+app.use(function(req, res, next) {
+    res.status(404);
+    res.sendFile(__dirname + '/public/dist/');
+});
+
+server.listen(port, function(){
+    console.log("Express server listening on port " + port);
+  });
