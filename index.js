@@ -3,7 +3,7 @@ var fs = require('fs'),
     https = require('https'),
     express = require('express');
 
-var port = 443;
+var port = 8097;
 
 const options = {
     key: fs.readFileSync(__dirname + '/private.key', 'utf8'),
