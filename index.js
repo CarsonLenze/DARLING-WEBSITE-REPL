@@ -29,5 +29,5 @@ app.use(function(req, res, next) {
 });
 
 server.listen(port, function(){
-    console.log("Express server listening on ports " + port);
+    console.log("Express server listening on port " + port);
   });
