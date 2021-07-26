@@ -1,1 +1,401 @@
+:root {
+  --color1: #FF4040;
+  --color2: #000;
+  --color3: #fff;
+  --font1: normal normal bold 25px/1.4em poppins-semibold,poppins,sans-serif;
+  --font2: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  --font3: normal normal bold 15px/1.4em poppins-semibold,poppins,sans-serif
+}
 
+html {
+	background: url("https://i.imgur.com/emtYc2y.jpg") no-repeat center fixed; 
+  background-size: cover;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.darling {
+  width: 350px;
+  height: auto;
+}
+
+.heading {
+background: #fff;
+height: 87px;
+width: 100%;
+border-top: 3px solid var(--color1);
+}
+
+.heading img {
+  height: 54px;
+  position: absolute;
+  margin: 16px 0px 16px;
+  left: 30px;
+}
+
+.heading a {
+  position: absolute;
+  margin: 27px 0px 27px;
+  left: 93px;
+  color: var(--color1);
+  font: var(--font1);
+  text-decoration: none;
+}
+
+.slash {
+  position: absolute;
+  margin: 35px 0px 35px;
+  left: 200px;
+  font: var(--font2);
+}
+
+.text {
+    position: absolute;
+    margin: 35px 0px 35px;
+    left: 225px;
+    font: var(--font2);
+}
+
+.home {
+  position: absolute;
+  margin: -53px 0px 33px;
+  right: 150px;
+}
+
+.home a {
+  font: var(--font2);
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.commands {
+  position: absolute;
+  margin: -52px 0px 33px;
+  right: 30px;
+}
+
+.commands a {
+  font: var(--font2);
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.commands a:hover {
+color: var(--color1);
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        display:none!important
+    }
+    .commands{
+        display:none!important
+    }
+    .darling {
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.about {
+  background: #c7c7c7;
+  width: 643px;
+  height: 643px;
+  border-radius: 25px;
+  position: absolute;
+  margin: 47px 0px 0 calc((100% - 980px) * 0.5);
+  left: 264px;
+}
+
+.profile {
+  position: absolute;
+  margin: 82px 0px 66px calc((100% - 980px) * 0.5);
+  left: 59px;
+}
+
+.top {
+  background: #7289DA;
+  width: 288px;
+  height: 158px;
+  border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+  margin: 0 auto;
+}
+
+.middle {
+  background: #6C82CF;
+  width: 288px;
+  height: 54px;
+}
+
+.bottom {
+  background: #2A2C30;
+  width: 288px;
+  height: 330px;
+  border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 900px){
+    .profile{
+        display:none!important
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .about{
+      position: relative;
+        width: 350px!important;
+        left: unset;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+}
+
+.avatar {
+  margin: 0 auto;
+  width: 91px;
+}
+
+.avatar img {
+  margin: 17px auto 9px auto;
+  width: 91px;
+	height: 91px;
+  border-radius: 50%;
+}
+
+.username {
+  text-align: center;
+  color: var(--color3);
+  font-size: 15px;
+  font: var(--font3);
+}
+
+.username .botText {
+	top: 8px;
+	background: var(--color3);
+	color: #7289DA;
+  font: var(--font3);
+	font-size: 12px;
+	padding: 4px 4px;
+	border-radius: 5px;
+}
+
+.activity .status {
+  position: absolute;
+  margin: 17px 0px -19px 14px;
+  color: var(--color3);
+  font: var(--font3);
+}
+
+.role {
+  position: relative;
+  margin: 14px 0px 12px 0;
+  left: 19px;
+}
+
+.ROLE {
+  color: #B4B7BA;
+  font: var(--font3);
+}
+
+.role1 {
+  margin: 0px 0px 27px 0;
+  left: 19px;
+  font: var(--font3);
+	border: 2px solid;
+  border-radius: 30px;
+	box-sizing: border-box;
+	height: 25px;
+  width: 110px;
+  padding: 4px;
+  position: absolute;
+  color: #B4B7BA;
+}
+
+.role1 .roleCircle {
+	background-color: #B4B7BA;
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+  margin: -1px 0px 0px 0px;
+}
+
+.role1 .roleName {
+	color: #B4B7BA;
+	margin: -18px 0px 0px 17px;
+}
+
+.note {
+  position: relative;
+  margin: 60px 0px 13px 0;
+  left: 19px;
+}
+
+.NOTE {
+  color: #B4B7BA;
+  font: var(--font3);
+}
+
+.AddNote {
+  position: relative;
+  margin: -4px 0px 10px 0;
+  left: 19px;
+}
+
+.AddNoteName {
+  color: #515357;
+  font-size: 11px;
+}
+
+.message input {
+  position: relative;
+  width: 224px;
+  height: 20px;
+  border: 1px solid #1D1F22;
+  background: #292b2f;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  margin: 55px 0px 7px 0;
+}
+
+.message {
+  padding: 21px 21px 21px 21px;
+}
+
+.UserActions {
+  position: relative;
+  margin: -20px 0px 0px 0;
+  left: 70px;
+}
+
+.UserActionsText {
+  color: #B4B7BA;
+  font-size: 11px
+}
+
+.button1 {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 215px 100px 10px;
+}
+
+.InviteButton {
+  background-color: #FF4040;
+  color: white;
+  width: 130px;
+  height: 35px;
+  border-radius: 25px;
+  border: 2px solid #FF4040;
+  right: 50px;
+  font: var(--font3);
+}
+
+.InviteButton:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.button2 {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 49px;
+  left: 165px;
+}
+
+.Support {
+  background-color: rgb(115, 136, 217);
+  color: white;
+  width: 141px;
+  height: 35px;
+  border-radius: 25px;
+  border: 2px solid rgb(115, 136, 217);
+  font: var(--font3);
+}
+
+.Support:hover {
+  background-color: #c7c7c7;
+  color: black;
+  border: 2px solid rgb(115, 136, 217);
+}
+
+.button3 {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  margin: 215px 100px 10px;
+  left: 140px;
+}
+
+.about img {
+  position: absolute;
+  bottom: 49px;
+  left: 100px;
+}
+
+.about p {
+  font-size: 17px; 
+  position: absolute;
+font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+width: 485px;
+margin: 0px 0px 34px 0;
+left: 110px;
+}
+
+.about .AboutUser {
+  margin: 52px 0px 10px 0;
+  font-size: 80px;
+}
+
+
+@media only screen and (max-width: 900px){
+  .about .AboutUser {
+  margin: 52px 0px 10px auto;
+  font-size: 60px;
+}
+
+    .about p{
+      padding: 10px 10px 10px 10px;
+      left: unset;
+      width: 330px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .button1{
+     margin: 200px 30px 10px;
+    }
+    .button2{
+    left: 25%;
+     margin: 250px 0px 10px 40px!important;
+    }
+    .button3 {
+      margin: 200px 40px 10px;
+    }
+    .about img{
+      left: 5%;
+      margin: 250px 0px 10px 40px!important;
+    }
+}
