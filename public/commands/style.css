@@ -191,3 +191,17 @@ color: var(--color1);
   font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
   width: 366px;
 }
+
+@media only screen and (max-width: 500px){
+    .box {
+      width: 420px!important;
+      margin: 0 auto 34px!important;
+      position: relative!important;
+      left: unset!important;
+    }
+    .commandtext {
+      width: 420px!important;
+      left: unset!important;
+      margin: 0 auto 32px!important;
+    }
+}
