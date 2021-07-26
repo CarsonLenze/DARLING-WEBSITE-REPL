@@ -192,16 +192,62 @@ color: var(--color1);
   width: 366px;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 750px){
     .box {
-      width: 420px!important;
+      width: 590px!important;
       margin: 0 auto 34px!important;
       position: relative!important;
       left: unset!important;
     }
     .commandtext {
-      width: 420px!important;
+      width: 590px!important;
       left: unset!important;
       margin: 0 auto 32px!important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        display:none!important
+    }
+    .commands{
+        display:none!important
+    }
+    .darling {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    .box {
+      width: 500px!important;
+      margin: 0 auto 34px!important;
+      position: relative!important;
+      left: unset!important;
+    }
+    .commandtext {
+      width: 500px!important;
+      left: unset!important;
+      margin: 0 auto 32px!important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .box {
+      width: 350px!important;
+      margin: 0 auto 34px!important;
+      position: relative!important;
+      left: unset!important;
+    }
+    .commandtext {
+      width: 350px!important;
+      left: unset!important;
+      margin: 0 auto 32px!important;
+    }
+    .CommandAbout {
+      width: 290px!important;
+    }
+    .CommandExample {
+      width: 290px!important;
     }
 }
