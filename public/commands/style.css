@@ -96,11 +96,6 @@ border-top: 3px solid var(--color1);
 color: var(--color1);
 }
 
-@media only screen and (max-width: 600px){
-    .darling{
-       margin:0 auto!important
-    }
-}
 
 @media only screen and (max-width: 600px){
     .home{
@@ -216,7 +211,6 @@ color: var(--color1);
         display:none!important
     }
     .darling {
-        width: 100%;
         height: auto;
         margin: 0 auto;
         position: relative;
