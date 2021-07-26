@@ -33,7 +33,8 @@ body {
 .heading {
 background: #fff;
 height: 87px;
-width: 100%;
+left:0;
+right:0;
 border-top: 3px solid var(--color1);
 }
 
@@ -191,6 +192,7 @@ color: var(--color1);
   font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
   width: 366px;
 }
+
 
 @media only screen and (max-width: 750px){
     .box {
