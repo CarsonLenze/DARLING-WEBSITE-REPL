@@ -1,0 +1,193 @@
+:root {
+  --color1: #FF4040;
+  --color2: #000;
+  --color3: #fff;
+  --font1: normal normal bold 25px/1.4em poppins-semibold,poppins,sans-serif;
+  --font2: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+}
+
+html {
+	background: url("https://i.imgur.com/emtYc2y.jpg") no-repeat center fixed; 
+  background-size: cover;
+}
+
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: rgba(5,5,5,1);
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: #FF4040;
+	box-shadow: inset 0 0 20px #FF4040;
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+background: #fff;
+height: 87px;
+width: 100%;
+border-top: 3px solid var(--color1);
+}
+
+.heading img {
+  height: 54px;
+  position: absolute;
+  margin: 16px 0px 16px;
+  left: 30px;
+}
+
+.heading a {
+  position: absolute;
+  margin: 27px 0px 27px;
+  left: 93px;
+  color: var(--color1);
+  font: var(--font1);
+  text-decoration: none;
+}
+
+.slash {
+  position: absolute;
+  margin: 35px 0px 35px;
+  left: 200px;
+  font: var(--font2);
+}
+
+.text {
+    position: absolute;
+    margin: 35px 0px 35px;
+    left: 225px;
+    font: var(--font2);
+}
+
+.home {
+  position: absolute;
+  margin: -53px 0px 33px;
+  right: 150px;
+}
+
+.home a {
+  font: var(--font2);
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.commands {
+  position: absolute;
+  margin: -52px 0px 33px;
+  right: 30px;
+}
+
+.commands a {
+  font: var(--font2);
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.home a:hover {
+color: var(--color1);
+}
+
+@media only screen and (max-width: 600px){
+    .darling{
+       margin:0 auto!important
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        display:none!important
+    }
+    .commands{
+        display:none!important
+    }
+    .darling {
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    .box {
+      width: 500px!important;
+      margin: 0 auto 34px!important;
+      position: relative!important;
+      left: unset!important;
+    }
+    .commandtext {
+      width: 500px!important;
+      left: unset!important;
+      margin: 0 auto 32px!important;
+    }
+}
+
+.box {
+  background: #3D3638;
+  border: 1px solid #000;
+  width: 750px;
+  height: 229px;
+  border-radius: 5px;
+  position: relative;
+  margin: 0px 0px 69px calc((100% - 980px) * 0.5);
+  left: 120px;
+}
+
+.top {
+    position: relative;
+    margin: 133px 0px 49px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 50px;
+    width: 100px;
+    font: normal normal bold 35px/1.4em poppins-semibold, poppins, sans-serif;
+}
+
+.commandtext {
+  margin: 0px 0px 64px calc((100% - 980px) * 0.5);
+  left: 160px;
+  position: relative;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 17px;
+  width: 668px;
+}
+
+.CommandName {
+  position: absolute;
+  margin: 23px 0px 23px 0;
+  left: 35px;
+  color: #FF4040;
+  font: normal normal bold 25px/1.4em poppins-semibold, poppins, sans-serif;
+}
+
+.CommandUsage {
+  position: absolute;
+  margin: 55px 0px 0px 0;
+  left: 35px;
+  color: #B4B7BA;
+  font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+}
+
+.CommandAbout {
+  position: absolute;
+  margin: 100px 0px 23px 0;
+  left: 35px;
+  color: #B4B7BA;
+  font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  width: 366px;
+}
+
+.CommandExample {
+  position: absolute;
+  margin: 175px 0px 23px 0;
+  left: 35px;
+  color: #B4B7BA;
+  font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  width: 366px;
+}
