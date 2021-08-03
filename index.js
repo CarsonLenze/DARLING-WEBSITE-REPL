@@ -1,19 +1,8 @@
-var fs = require('fs'),
-    http = require('http'),
-    https = require('https'),
-    express = require('express');
+var express = require('express');
 
-var port = 443;
-
-const options = {
-    key: fs.readFileSync(__dirname + '/private.key', 'utf8'),
-   cert: fs.readFileSync(__dirname + '/public.cert', 'utf8')
- };
-
+var port = 8000;
 
 var app = express();
-
-var server = https.createServer(options, app)
 
 app.use(express.static(__dirname + '/public'));
 
@@ -28,6 +17,6 @@ app.use(function(req, res, next) {
     res.sendFile(__dirname + '/public/dist/');
 });
 
-server.listen(port, function(){
+app.listen(port, function(){
     console.log("Express server listening on port" + port);
   });
